@@ -23,12 +23,12 @@ int main()
         int indexSlash = 0;
         for(int i = 0; i < s.length(); i++)
         {
-            if(s[i] == '/')
+            if(s[i] == '/' || s[i] == '\\')
             {
                 if(!slash)
                 {
                     indexSlash ++;
-                    s1 += s[i];
+                    s1 += '/';
                     slash = true;
                 }
                 point = 0;
